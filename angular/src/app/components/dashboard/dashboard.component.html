@@ -1,0 +1,145 @@
+<div class="level">
+    <div class="level-left">
+        <h1 class="subtitle is-3">
+            <span class="has-text-grey-light">Hello</span>
+            <strong>Alex Johnson</strong>
+        </h1>
+    </div>
+    <div class="level-right">
+        <div class="select">
+            <select [(ngModel)]="filter" (ngModelChange)="onChange($event)">
+                <option>Today</option>
+                <option>Yesterday</option>
+                <option>This Week</option>
+                <option>This Month</option>
+                <option>This Year</option>
+                <option>All time</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="columns is-multiline">
+    <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+        <div class="notification is-link has-text">
+            <p class="title is-1">{{statistics[0].orders}}</p>
+            <p class="subtitle is-4">Orders</p>
+        </div>
+    </div>
+
+    <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+        <div class="notification is-info has-text">
+            <p class="title is-1">${{statistics[0].revenue}}</p>
+            <p class="subtitle is-4">Revenue</p>
+        </div>
+    </div>
+
+    <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+        <div class="notification is-primary has-text">
+            <p class="title is-1">{{statistics[0].visitors}}</p>
+            <p class="subtitle is-4">Visitors</p>
+        </div>
+    </div>
+
+    <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+        <div class="notification is-success has-text">
+            <p class="title is-1">{{statistics[0].pageviews}}</p>
+            <p class="subtitle is-4">Pageviews</p>
+        </div>
+    </div>
+
+    <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="title is-4">
+                    Latest orders
+                </h2>
+
+                <div class="level" *ngFor="let order of orders; let i = index">
+                    <div class="level-left">
+                        <div>
+                            <p class="title is-5 is-marginless">
+                                <a [routerLink]="['/orders-edit']" [queryParams]="{id: order.id }">{{ order.number }}</a>
+                            </p>
+                            <small>
+                                {{ order.date }} by
+                                {{ order.customer }}
+                            </small>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="has-text-right">
+                            <p class="title is-5 is-marginless">
+                                ${{ order.total }}
+                            </p>
+                            <span *ngIf="order.status === 'In progress'" class="tag is-warning">{{ order.status }}</span>
+                            <span *ngIf="order.status === 'Successful'" class="tag is-success">{{ order.status }}</span>
+                            <span *ngIf="order.status === 'Failed'" class="tag is-failed">{{ order.status }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="button is-link is-outlined" [routerLink]="['/orders']">View all orders</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="title is-4">
+                    Most popular books
+                </h2>
+
+                <div class="media" *ngFor="let book of books; let i = index">
+                    <div class="media-left is-marginless">
+                        <p class="number">{{i + 1}}</p>
+                    </div>
+                    <div class="media-left">
+                        <img src="assets/images/{{book.image}}" width="40">
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-5 is-spaced is-marginless">
+                            <a [routerLink]="['/books-edit']" [queryParams]="{id: book.id }">{{book.title}}</a>
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        {{ filter }}
+                    </div>
+                </div>
+
+                <a class="button is-link is-outlined" [routerLink]="['/books']">View all books</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="title is-4">
+                    Most loyal customers
+                </h2>
+
+                <div class="media" *ngFor="let customer of customers; let i = index">
+                    <div class="media-left is-marginless">
+                        <p class="number">{{i + 1}}</p>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-5 is-spaced is-marginless">
+                            <a [routerLink]="['/customers-edit']" [queryParams]="{id: customer.id }">{{ customer.name }}</a>
+                        </p>
+                        <p class="subtitle is-6">
+                            <td>{{ customer.country }}</td>
+
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        {{ customer.orders }} orders
+                    </div>
+                </div>
+
+                <a class="button is-link is-outlined" [routerLink]="['/customers']">View all customers</a>
+            </div>
+        </div>
+    </div>
+</div>

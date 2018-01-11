@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit book</title>
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma-0.6.1.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="images/logo.png">
+        </a>
+        <div class="navbar-burger burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <small>Publishing at the speed of technology</small>
+          </div>
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">
+              Alex Johnson
+            </div>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-user-circle-o"></i>
+                  </span>
+                  Profile
+                </div>
+              </a>
+              <a class="navbar-item open-modal-button" data-target="report-a-bug">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-bug"></i>
+                  </span>
+                  Report bug
+                </div>
+              </a>
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-sign-out"></i>
+                  </span>
+                  Sign Out
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+          <nav class="menu">
+            <p class="menu-label">
+              Menu
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="dashboard.html">
+                  <span class="icon">
+                    <i class="fa fa-tachometer"></i>
+                  </span>
+                  Dashboard
+                  </a>
+              </li>
+              <li>
+                <a class="is-active" href="books.html">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  Books
+                </a>
+              </li>
+              <li>
+                <a href="customers.html">
+                  <span class="icon">
+                    <i class="fa fa-address-book"></i>
+                  </span>
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a href="orders.html">
+                  <span class="icon">
+                    <i class="fa fa-file-text-o"></i>
+                  </span>
+                  Orders
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="column">
+          <nav class="breadcrumb">
+            <ul>
+              <li>
+                <a href="books.html">Books</a>
+              </li>
+              <li class="is-active">
+                <a href="edit-book.html">Edit book</a>
+              </li>
+            </ul>
+          </nav>
+
+          <form>
+            <div class="field">
+              <div class="field">
+                <label class="label">Title</label>
+                <div class="control">
+                  <input class="input is-large" type="text" placeholder="e.g. Designing with Bulma" value="TensorFlow For Machine Intelligence" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="columns is-desktop">
+              <div class="column">
+                <label class="label">Price</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="number" placeholder="e.g. 22.99" value="22.99" required>
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-dollar"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="column">
+                <label class="label">Pages</label>
+                <div class="control">
+                  <input class="input" type="number" placeholder="e.g. 270" value="270" required>
+                </div>
+              </div>
+
+              <div class="column">
+                <label class="label">ISBN</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="e.g. 9781939902351" value="9781939902351" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Cover image</label>
+              <div class="control">
+                <img src="images/tensorflow.jpg">
+              </div>
+              <div class="control">
+                <div class="file has-name">
+                  <label class="file-label">
+                    <input class="file-input" type="file">
+                    <span class="file-cta">
+                      <span class="file-icon">
+                        <i class="fa fa-upload"></i>
+                      </span>
+                      <span class="file-label">
+                        Choose a file…
+                      </span>
+                    </span>
+                    <span class="file-name">
+                      No file chosen
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="buttons">
+                <button class="button is-medium is-success">Save changes</button>
+                <button class="button is-medium is-light">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Modals -->
+    <div class="modal" id="report-a-bug">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Report a Bug</p>
+                <button class="delete close-modal-button" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="notification is-success is-hidden modal-success-notification">
+                <button class="delete close-notification"></button>
+                    <span class="fa fa-bug"></span> Thanks. Your bug has been reported.
+                </div>
+                <textarea class="textarea" placeholder="Let us know what problems you faced."></textarea>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success send-bug-report">Send</button>
+                <button class="button close-modal-button">Close</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    
+  </body>
+</html>

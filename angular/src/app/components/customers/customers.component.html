@@ -1,0 +1,110 @@
+<h1 class="title ">Customers</h1>
+
+<nav class="level">
+    <div class="level-left">
+        <div class="level-item">
+            <p class="subtitle is-5">
+                <strong>{{ (customers | filterBy: userFilter).length }}</strong> customers
+            </p>
+        </div>
+
+        <p class="level-item">
+            <a class="button is-success" (click)="add()">New</a>
+        </p>
+
+        <div class="level-item is-hidden-tablet-only">
+            <div class="field has-addons">
+                <p class="control">
+                    <input class="input" type="text" placeholder="Name…" [(ngModel)]="userFilter.name">
+                </p>
+                <p class="control">
+                    <button class="button" (click)="userFilter.name = ''">
+                        Clear
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="level-right">
+        <p class="level-item" (click)="userFilter.hasOrders = ''">
+            <a>
+                <strong>All</strong>
+            </a>
+        </p>
+        <p class="level-item" (click)="userFilter.hasOrders = true">
+            <a>With orders</a>
+        </p>
+        <p class="level-item" (click)="userFilter.hasOrders = false">
+            <a>Without orders</a>
+        </p>
+    </div>
+</nav>
+
+<table class="table is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th class="is-narrow">
+                <input type="checkbox">
+            </th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Orders</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th class="is-narrow">
+                <input type="checkbox">
+            </th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Orders</th>
+            <th>Actions</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr *ngFor="let customer of customers | filterBy: userFilter | orderBy: order">
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>
+                <a [routerLink]="['/customers-edit']" [queryParams]="{id: customer.id }">
+                    <strong>{{ customer.name }}</strong>
+                </a>
+            </td>
+            <td>
+                <code>{{ customer.email }}</code>
+            </td>
+            <td>{{ customer.country }}</td>
+            <td>
+                <a [routerLink]="['/orders']">{{ customer.orders }}</a>
+            </td>
+            <td>
+                <div class="buttons">
+                    <a class="button is-small" [routerLink]="['/customers-edit']" [queryParams]="{id: customer.id }">Edit</a>
+                    <a class="button is-small" (click)="delete()">Delete</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<nav class="pagination">
+    <a class="pagination-previous">Previous</a>
+    <a class="pagination-next">Next page</a>
+    <ul class="pagination-list">
+        <li>
+            <a class="pagination-link">1</a>
+        </li>
+        <li>
+            <span class="pagination-ellipsis">…</span>
+        </li>
+        <li>
+            <a class="pagination-link">1</a>
+        </li>
+    </ul>
+</nav>

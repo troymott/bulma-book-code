@@ -1,0 +1,137 @@
+<nav class="breadcrumb">
+    <ul>
+        <li>
+            <a [routerLink]="['/orders']">Orders</a>
+        </li>
+        <li class="is-active">
+            <a>Edit order</a>
+        </li>
+    </ul>
+</nav>
+
+<h1 class="subtitle is-3">
+    <span class="has-text-grey-light">Order</span>
+    <strong>{{order.number}}</strong>
+</h1>
+
+<div class="columns is-desktop">
+    <div class="column is-4-desktop is-3-widescreen">
+        <p class="heading">
+            <strong>Date</strong>
+        </p>
+        <p class="content">
+            {{order.date}}
+        </p>
+
+        <p class="heading">
+            <strong>Status</strong>
+        </p>
+        <div class="buttons">
+            <button (click)="order.status = 'In progress'" [ngClass]="{'is-outlined': order.status!='In progress'}" class="button is-small is-warning">In progress</button>
+            <button (click)="order.status = 'Successful'" [ngClass]="{'is-outlined': order.status!='Successful'}" class="button is-small is-success">Successful</button>
+            <button (click)="order.status = 'Failed'" [ngClass]="{'is-outlined': order.status!='Failed'}" class="button is-small is-danger">Failed</button>
+        </div>
+
+        <p class="heading">
+            <strong>Customer</strong>
+        </p>
+        <p class="content">
+            <strong>
+                <a [routerLink]="['/customers-edit']" [queryParams]="{id: order.customerObject.id }">{{order.customer}}</a>
+            </strong>
+            <br>
+            <code>{{order.customerObject.email}}</code>
+            <br> {{order.customerObject.country}}
+        </p>
+    </div>
+
+    <div class="column">
+        <p class="heading">
+            <strong>Books</strong>
+        </p>
+        <table class="table is-bordered is-fullwidth">
+            <thead>
+                <tr>
+                    <th class="is-narrow">Cover</th>
+                    <th>Title</th>
+                    <th class="has-text-right is-narrow">Price</th>
+                    <th class="has-text-right is-narrow">Amount</th>
+                    <th class="has-text-right is-narrow">Total</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th colspan="5" class="has-text-right">${{order.total}}</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../assets/images/tensorflow.jpg" width="40">
+                    </td>
+                    <td>
+                        <a [routerLink]="['/books-edit']" [queryParams]="{id: 1 }">
+                            <strong>
+                                TensorFlow For Machine Intelligence
+                            </strong>
+                        </a>
+                    </td>
+                    <td class="has-text-right">
+                        $22.99
+                    </td>
+                    <td class="has-text-right">
+                        <input class="input is-small" type="number" value="1" maxlength="2" max="2">
+                    </td>
+                    <td class="has-text-right">
+                        $22.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../assets/images/js-framework.jpg" width="40">
+                    </td>
+                    <td>
+                        <a [routerLink]="['/books-edit']" [queryParams]="{id: 5 }">
+                            <strong>
+                                Choosing a JavaScript Framework
+                            </strong>
+                        </a>
+                    </td>
+                    <td class="has-text-right">
+                        $19.99
+                    </td>
+                    <td class="has-text-right">
+                        <input class="input is-small" type="number" value="1" maxlength="2" max="2">
+                    </td>
+                    <td class="has-text-right">
+                        $19.99
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <div class="field is-grouped is-grouped-right">
+                            <div class="control">
+                                <div class="select is-small">
+                                    <select>
+                                        <option>TensorFlow For Machine Intelligence</option>
+                                        <option>Docker in Production</option>
+                                        <option>Developing a Gulp.js Edge</option>
+                                        <option>Learning Swift</option>
+                                        <option>Choosing a JavaScript Framework</option>
+                                        <option>Deconstructing Google Cardboard Apps</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <input class="input is-small" type="number" value="1" placeholder="Amount" maxlength="2" max="2">
+                            </div>
+                            <div class="control">
+                                <a class="button is-small is-link" (click)="add()">Add book</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

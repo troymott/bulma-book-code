@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application</title>
+    <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bulma-0.6.1.css">
+    <style>
+        .is-rounded img {
+            border-radius: 300000px;
+        }
+
+        figure {
+            margin-right: 0.5rem;
+        }
+
+        .is-leveled {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navMenuColorprimary-example">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navMenuColorprimary-example" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button is-white" href="#">
+                                <span class="icon">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                                <span>
+                                    Report a bug
+                                </span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-white" href="#">
+                                <span class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        <figure class="image is-24x24 is-rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png">
+                        </figure>
+                        John Doe
+                    </a>
+                    <div class="navbar-dropdown">
+                        <div class="navbar-item is-uppercase">
+                            Application inc.
+                        </div>
+                        <hr class="navbar-divider ">
+                        <a class="navbar-item is-leveled " href="# ">
+                            Account Settings
+                            <span class="icon ">
+                                    <i class="fa fa-cog "></i>
+                                </span>
+                        </a>
+                        <a class="navbar-item is-leveled " href="# ">
+                            User stats
+                            <span class="icon ">
+                                    <i class="fa fa-bar-chart "></i>
+                                </span>
+                        </a>
+                        <a class="navbar-item is-leveled " href="# ">
+                            Messages
+                            <span class="icon ">
+                                    <i class="fa fa-comments "></i>
+                                </span>
+                        </a>
+                        <a class="navbar-item is-leveled " href="# ">
+                            Sign Out
+                            <span class="icon ">
+                                    <i class="fa fa-sign-out "></i>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section ">
+        <div class="columns ">
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+
+                <aside class="menu ">
+                    <p class="menu-label ">
+                        General
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="is-active" href="dashboard.html"><span class="icon ">
+                                    <i class="fa fa-tachometer"></i>
+                                </span>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="books.html">
+                                <span class="icon">
+                                    <i class="fa fa-book"></i>
+                                </span>
+                                Books
+                            </a>
+                        </li>
+                        <li>
+                            <a href="customers.html">
+                                <span class="icon">
+                                    <i class="fa fa-address-book"></i>
+                                </span>
+                                Customers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="orders.html">
+                                <span class="icon ">
+                                    <i class="fa fa-file-text-o"></i>
+                                </span>
+                                Orders
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="menu-label ">
+                        Administration
+                    </p>
+                    <ul class="menu-list ">
+                        <li>
+                            <a href="users.html"><span class="icon ">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </span>Users</a>
+                        </li>
+                        <li>
+                            <a href="access.html">
+                                <span class="icon">
+                                    <i class="fa fa-id-card"></i>
+                                </span>
+                                Access rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="authentication.html"><span class="icon ">
+                                    <i class="fa fa-lock"></i>
+                                </span>Authentication</a>
+                        </li>
+                    </ul>
+                    <p class="menu-label ">
+                        Transactions
+                    </p>
+                    <ul class="menu-list ">
+                        <li>
+                            <a><span class="icon ">
+                                    <i class="fa fa-credit-card"></i>
+                                </span>Payments</a>
+                        </li>
+                        <li>
+                            <a><span class="icon ">
+                                    <i class="fa fa-exchange"></i>
+                                </span>Transfers</a>
+                        </li>
+                        <li>
+                            <a><span class="icon ">
+                                    <i class="fa fa-balance-scale"></i>
+                                </span>Balance</a>
+                        </li>
+                    </ul>
+                </aside>
+
+            </div>
+            <main class="column ">
+
+                <h1 class="title ">Dashboard</h1>
+
+                <div class="block">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                This year
+                            </p>
+                            <div class="card-header-icon" aria-label="more options">
+                                <div class="dropdown is-hoverable is-right">
+                                  <div class="dropdown-trigger">
+                                    <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                      <span class="icon is-small">
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                      </span>
+                                    </button>
+                                  </div>
+                                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                      <a class="dropdown-item">
+                                        Edit
+                                      </a>
+                                      <a class="dropdown-item">
+                                        Duplicate
+                                      </a>
+                                      <a class="dropdown-item">
+                                        Remove
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="card-content">
+                            <div class="level has-text-centered">
+                              <div class="level-item">
+                                <div>
+                                  <p class="heading">Customers</p>
+                                  <p class="title">4,161</p>
+                                  <strong class="tag is-success">+5.67%</strong>
+                                </div>
+                              </div>
+
+                              <div class="level-item">
+                                <div>
+                                  <p class="heading">Sales</p>
+                                  <p class="title">$67,209</p>
+                                  <strong class="tag is-success">+11.18%</strong>
+                                </div>
+                              </div>
+
+                              <div class="level-item">
+                                <div>
+                                  <p class="heading">Inbounds</p>
+                                  <p class="title">254</p>
+                                  <strong class="tag is-danger">-2.04%</strong>
+                                </div>
+                              </div>
+
+                              <div class="level-item">
+                                <div>
+                                  <p class="heading">Employees</p>
+                                  <p class="title">1,423</p>
+                                  <strong class="tag is-success">+5.65%</strong>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-multiline">
+                    <div class="column is-6-desktop is-4-widescreen">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Sales per category
+                                </p>
+                                <div class="card-header-icon" aria-label="more options">
+                                    <div class="dropdown is-hoverable is-right">
+                                      <div class="dropdown-trigger">
+                                        <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                          <span class="icon is-small">
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                          </span>
+                                        </button>
+                                      </div>
+                                      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                          <a class="dropdown-item">
+                                            Edit
+                                          </a>
+                                          <a class="dropdown-item">
+                                            Duplicate
+                                          </a>
+                                          <a class="dropdown-item">
+                                            Remove
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="card-content">
+                                <img src="../images/pie-chart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-desktop is-4-widescreen">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Sales per month
+                                </p>
+                                <div class="card-header-icon" aria-label="more options">
+                                    <div class="dropdown is-hoverable is-right">
+                                      <div class="dropdown-trigger">
+                                        <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                          <span class="icon is-small">
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                          </span>
+                                        </button>
+                                      </div>
+                                      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                          <a class="dropdown-item">
+                                            Edit
+                                          </a>
+                                          <a class="dropdown-item">
+                                            Duplicate
+                                          </a>
+                                          <a class="dropdown-item">
+                                            Remove
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="card-content">
+                                <img src="../images/bar-chart.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-6-desktop is-4-widescreen">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Sales per month
+                                </p>
+                                <div class="card-header-icon" aria-label="more options">
+                                    <div class="dropdown is-hoverable is-right">
+                                      <div class="dropdown-trigger">
+                                        <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                          <span class="icon is-small">
+                                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                          </span>
+                                        </button>
+                                      </div>
+                                      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                          <a class="dropdown-item">
+                                            Edit
+                                          </a>
+                                          <a class="dropdown-item">
+                                            Duplicate
+                                          </a>
+                                          <a class="dropdown-item">
+                                            Remove
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="card-content">
+                                <table class="table is-hoverable is-fullwidth is-narrow is-marginless">
+                                    <tbody>
+                                        <tr>
+                                            <td>December</td>
+                                            <td>
+                                                <span class="tag is-success">+1.67%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,897</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>November</td>
+                                            <td>
+                                                <span class="tag is-success">+2.45%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$6,478</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>October</td>
+                                            <td>
+                                                <span class="tag is-danger">-0.42%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$4,149</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>September</td>
+                                            <td>
+                                                <span class="tag is-success">+0.34%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$4,149</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>August</td>
+                                            <td>
+                                                <span class="tag is-danger">-1.09%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,511</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>July</td>
+                                            <td>
+                                                <span class="tag is-success">+3.07%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,958</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>June</td>
+                                            <td>
+                                                <span class="tag is-success">+0.04%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,565</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>
+                                                <span class="tag is-success">+1.33%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,712</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>April</td>
+                                            <td>
+                                                <span class="tag is-danger">-2.03%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$6,042</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>March</td>
+                                            <td>
+                                                <span class="tag is-success">+1.44%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,167</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>
+                                                <span class="tag is-success">+0.12%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$6,098</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>January</td>
+                                            <td>
+                                                <span class="tag is-success">+1.76%</span>
+                                            </td>
+                                            <td class="has-text-right">
+                                                <code>$5,462</code>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+
+</html>

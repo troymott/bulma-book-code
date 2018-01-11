@@ -1,0 +1,81 @@
+<nav class="breadcrumb">
+    <ul>
+        <li>
+            <a [routerLink]="['/customers']">Customers</a>
+        </li>
+        <li class="is-active">
+            <a>Edit customer</a>
+        </li>
+    </ul>
+</nav>
+
+<form>
+    <div class="field">
+        <div class="field">
+            <label class="label">Full name</label>
+            <div class="control">
+                <input class="input is-large" type="text" placeholder="e.g. Alex Smith" value="{{ customer.name }}" required="">
+            </div>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left">
+            <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" value="{{ customer.email }}" required="">
+            <span class="icon is-small is-left">
+            <i class="fa fa-envelope"></i>
+          </span>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Address</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Number and street name" value="" required="">
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <input class="input" type="text" placeholder="Second address line (optional)">
+        </div>
+    </div>
+
+    <div class="columns is-multiline">
+        <div class="column is-12-tablet is-6-tablet is-4-desktop">
+            <label class="label">Postcode / Zipcode</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="e.g. 67202" value="" required="">
+            </div>
+        </div>
+
+        <div class="column is-12-tablet is-6-tablet is-4-desktop">
+            <label class="label">City</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="e.g. San Francisco" value="" required="">
+            </div>
+        </div>
+
+        <div class="column is-12-tablet is-6-tablet is-4-desktop">
+            <label class="label">Country</label>
+            <div class="control">
+                <div class="select">
+                    <select [(ngModel)]="customer.country" [ngModelOptions]="{standalone: true}">
+                <option>-- Choose a country --</option>
+                <option>Canada</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+              </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="buttons">
+            <a class="button is-medium is-success" (click)="save()">Save changes</a>
+            <a class="button is-medium is-light" [routerLink]="['/customers']">Cancel</a>
+        </div>
+    </div>
+</form>

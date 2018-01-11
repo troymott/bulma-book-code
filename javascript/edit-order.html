@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit order</title>
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma-0.6.1.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="images/logo.png">
+        </a>
+        <div class="navbar-burger burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <small>Publishing at the speed of technology</small>
+          </div>
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">
+              Alex Johnson
+            </div>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-user-circle-o"></i>
+                  </span>
+                  Profile
+                </div>
+              </a>
+              <a class="navbar-item open-modal-button" data-target="report-a-bug">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-bug"></i>
+                  </span>
+                  Report bug
+                </div>
+              </a>
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-sign-out"></i>
+                  </span>
+                  Sign Out
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+          <nav class="menu">
+            <p class="menu-label">
+              Menu
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="dashboard.html">
+                  <span class="icon">
+                    <i class="fa fa-tachometer"></i>
+                  </span>
+                  Dashboard
+                  </a>
+              </li>
+              <li>
+                <a href="books.html">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  Books
+                </a>
+              </li>
+              <li>
+                <a href="customers.html">
+                  <span class="icon">
+                    <i class="fa fa-address-book"></i>
+                  </span>
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a class="is-active" href="orders.html">
+                  <span class="icon">
+                    <i class="fa fa-file-text-o"></i>
+                  </span>
+                  Orders
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="column">
+          <nav class="breadcrumb">
+            <ul>
+              <li>
+                <a href="orders.html">Orders</a>
+              </li>
+              <li class="is-active">
+                <a>Edit order</a>
+              </li>
+            </ul>
+          </nav>
+
+          <h1 class="subtitle is-3">
+            <span class="has-text-grey-light">Order</span> <strong>787352</strong>
+          </h1>
+
+          <div class="columns is-desktop">
+            <div class="column is-4-desktop is-3-widescreen">
+              <p class="heading">
+                <strong>Date</strong>
+              </p>
+              <p class="content">
+                Nov 18, 17:38
+              </p>
+
+              <p class="heading">
+                <strong>Status</strong>
+              </p>
+              <div class="buttons">
+                <button class="button is-small is-warning">In progress</button>
+                <button class="button is-small is-success is-outlined">Successful</button>
+                <button class="button is-small is-danger is-outlined">Failed</button>
+              </div>
+
+              <p class="heading">
+                <strong>Customer</strong>
+              </p>
+              <p class="content">
+                <strong>
+                  <a href="edit-customer.html">John Miller</a>
+                </strong>
+                <br>
+                <code>johnmiller@gmail.com</code>
+                <br>
+                55 Long Bridge road
+                <br>
+                78170 Los Angeles
+                <br>
+                United States
+              </p>
+            </div>
+
+            <div class="column">
+              <p class="heading">
+                <strong>Books</strong>
+              </p>
+              <table class="table is-bordered is-fullwidth">
+                <thead>
+                  <tr>
+                    <th class="is-narrow">Cover</th>
+                    <th>Title</th>
+                    <th class="has-text-right is-narrow">Price</th>
+                    <th class="has-text-right is-narrow">Amount</th>
+                    <th class="has-text-right is-narrow">Total</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th colspan="5" class="has-text-right">$42.98</th>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="images/tensorflow.jpg" width="40">
+                    </td>
+                    <td>
+                      <a href="edit-book.html">
+                        <strong>
+                          TensorFlow For Machine Intelligence
+                        </strong>
+                      </a>
+                    </td>
+                    <td class="has-text-right">
+                      $22.99
+                    </td>
+                    <td class="has-text-right">
+                      <input class="input is-small" type="number" value="1" maxlength="2" max="2">
+                    </td>
+                    <td class="has-text-right">
+                      $22.99
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="images/js-framework.jpg" width="40">
+                    </td>
+                    <td>
+                      <a href="edit-book.html">
+                        <strong>
+                          Choosing a JavaScript Framework
+                        </strong>
+                      </a>
+                    </td>
+                    <td class="has-text-right">
+                      $19.99
+                    </td>
+                    <td class="has-text-right">
+                      <input class="input is-small" type="number" value="1" maxlength="2" max="2">
+                    </td>
+                    <td class="has-text-right">
+                      $19.99
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <div class="field is-grouped is-grouped-right">
+                        <div class="control">
+                          <div class="select is-small">
+                            <select>
+                              <option>TensorFlow For Machine Intelligence</option>
+                              <option>Docker in Production</option>
+                              <option>Developing a Gulp.js Edge</option>
+                              <option>Learning Swift</option>
+                              <option>Choosing a JavaScript Framework</option>
+                              <option>Deconstructing Google Cardboard Apps</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="control">
+                          <input class="input is-small" type="number" value="1" placeholder="Amount" maxlength="2" max="2">
+                        </div>
+                        <div class="control">
+                          <a class="button is-small is-link">Add book</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modals -->
+    <div class="modal" id="report-a-bug">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Report a Bug</p>
+                <button class="delete close-modal-button" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="notification is-success is-hidden modal-success-notification">
+                <button class="delete close-notification"></button>
+                    <span class="fa fa-bug"></span> Thanks. Your bug has been reported.
+                </div>
+                <textarea class="textarea" placeholder="Let us know what problems you faced."></textarea>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success send-bug-report">Send</button>
+                <button class="button close-modal-button">Close</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    
+  </body>
+</html>

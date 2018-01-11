@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application</title>
+    <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bulma-0.6.1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.min.css">
+    <style>
+    .is-rounded img {
+        border-radius: 300000px;
+    }
+
+    figure {
+        margin-right: 0.5rem;
+    }
+
+    .is-leveled {
+        justify-content: space-between;
+    }
+
+    .notification a.dropdown-item:not(.button) {
+        text-decoration: none;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navMenuColorprimary-example">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navMenuColorprimary-example" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="button is-white" href="#">
+                                <span class="icon">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                                <span>
+                                    Report a bug
+                                </span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-white" href="#">
+                                <span class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="#">
+                        <figure class="image is-24x24 is-rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png">
+                        </figure>
+                        John Doe
+                    </a>
+                    <div class="navbar-dropdown">
+                        <div class="navbar-item is-uppercase">
+                            Application inc.
+                        </div>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item is-leveled" href="#">
+                            Account Settings
+                            <span class="icon">
+                                    <i class="fa fa-cog"></i>
+                                </span>
+                        </a>
+                        <a class="navbar-item is-leveled" href="#">
+                            User stats
+                            <span class="icon">
+                                    <i class="fa fa-bar-chart"></i>
+                                </span>
+                        </a>
+                        <a class="navbar-item is-leveled" href="#">
+                            Messages
+                            <span class="icon">
+                                    <i class="fa fa-comments"></i>
+                                </span>
+                        </a>
+                        <a class="navbar-item is-leveled" href="#">
+                            Sign Out
+                            <span class="icon">
+                                    <i class="fa fa-sign-out"></i>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <aside class="menu">
+                    <p class="menu-label">
+                        General
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="dashboard.html"><span class="icon">
+                                    <i class="fa fa-tachometer"></i>
+                                </span>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="books.html">
+                                <span class="icon">
+                                    <i class="fa fa-book"></i>
+                                </span>
+                                Books
+                            </a>
+                        </li>
+                        <li>
+                            <a href="customers.html">
+                                <span class="icon">
+                                    <i class="fa fa-address-book"></i>
+                                </span>
+                                Customers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="orders.html">
+                                <span class="icon ">
+                                    <i class="fa fa-file-text-o"></i>
+                                </span>
+                                Orders
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="menu-label">
+                        Administration
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="users.html"><span class="icon">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </span>Users</a>
+                        </li>
+                        <li>
+                            <a href="access.html">
+                                <span class="icon">
+                                    <i class="fa fa-id-card"></i>
+                                </span>
+                                Access rules
+                            </a>
+                        </li>
+                        <li>
+                            <a class="is-active" href="authentication.html"><span class="icon">
+                                    <i class="fa fa-lock"></i>
+                                </span>Authentication</a>
+                        </li>
+                    </ul>
+                    <p class="menu-label">
+                        Transactions
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a><span class="icon">
+                                    <i class="fa fa-credit-card"></i>
+                                </span>Payments</a>
+                        </li>
+                        <li>
+                            <a><span class="icon">
+                                    <i class="fa fa-exchange"></i>
+                                </span>Transfers</a>
+                        </li>
+                        <li>
+                            <a><span class="icon">
+                                    <i class="fa fa-balance-scale"></i>
+                                </span>Balance</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <main class="column">
+                <h1 class="title">Authentication</h1>
+                <div class="box">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <p class="subtitle">Two-factor authentication</p>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <strong class="has-text-success">Active</strong>
+                            </div>
+                            <div class="level-item">
+                                <a class="button is-small">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="notification">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Status</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field is-grouped">
+                                    <p class="buttons has-addons">
+                                        <button class="button is-success is-selected">
+                                            Active
+                                        </button>
+                                        <button class="button">
+                                            Inactive
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Phone number</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field has-addons">
+                                    <div class="control">
+                                        <div class="dropdown is-hoverable">
+                                            <div class="dropdown-trigger">
+                                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                    <span class="flag-icon flag-icon-us"></span>&nbsp;+1
+                                                    <span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i>      </span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                <div class="dropdown-content">
+                                                    <div class="dropdown-item">
+                                                        <div class="control">
+                                                            <input class="input is-small" type="text" placeholder="Search Country">
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="dropdown-item"><span class="flag-icon flag-icon-pk"></span> Pakistan <span class="has-text-grey-light">+92</span></a>
+                                                    <a href="#" class="dropdown-item"><span class="flag-icon flag-icon-in"></span> India <span class="has-text-grey-light">+91</span>
+                                                    <a href="#" class="dropdown-item"><span class="flag-icon flag-icon-tr"></span> Turkey  <span class="has-text-grey-light">+90</span>
+      </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="control">
+                                        <input class="input" type="tel" placeholder="Phone number">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label"></div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="buttons">
+                                        <button class="button is-link">
+                                            Save changes
+                                        </button>
+                                        <button class="button is-white">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="box">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <p class="subtitle">Recovery codes</p>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <a class="button is-small">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="content is-large">
+                            <pre>d8ehf-aoi3j
+28jow-eancj
+qtwyd-3u37f
+oeiji-jcnx9
+0198d-lkjbn</pre>
+                        </div>
+                        <div class="buttons">
+                            <a class="button">
+                                <span class="icon">
+                                    <i class="fa fa-download"></i>
+                                </span>
+                                <span>Download</span>
+                            </a>
+                            <a class="button">
+                                <span class="icon">
+                                    <i class="fa fa-print"></i>
+                                </span>
+                                <span>Print</span>
+                            </a>
+                            <a class="button">
+                                <span class="icon">
+                                    <i class="fa fa-copy"></i>
+                                </span>
+                                <span>Copy</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <p class="subtitle">Sessions</p>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <strong class="has-text-success">2 active sessions</strong>
+                            </div>
+                            <div class="level-item">
+                                <small class="has-text-grey">1 recent</small>
+                            </div>
+                            <div class="level-item">
+                                <a class="button is-small">Show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="media">
+                            <div class="media-left">
+                                <span class="icon is-large has-text-success">
+                                    <i class="fa fa-circle"></i>
+                                </span>
+                            </div>
+                            <div class="media-left">
+                                <span class="icon is-large">
+                                    <i class="fa fa-2x fa-desktop"></i>
+                                </span>
+                            </div>
+                            <div class="media-content">
+                                <strong>Chrome</strong> on OS X 10.12.6
+                                <br>
+                                <code>84.216.76.381</code>
+                            </div>
+                            <div class="media-right">
+                                <button class="delete"></button>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <span class="icon is-large has-text-success">
+                                    <i class="fa fa-circle"></i>
+                                </span>
+                            </div>
+                            <div class="media-left">
+                                <span class="icon is-large">
+                                    <i class="fa fa-2x fa-mobile"></i>
+                                </span>
+                            </div>
+                            <div class="media-content">
+                                <strong>Safari</strong> on iOS 11.1.1
+                                <br>
+                                <code>65.214.72.181</code>
+                            </div>
+                            <div class="media-right">
+                                <button class="delete"></button>
+                            </div>
+                        </div>
+                        <div class="media has-text-grey-light">
+                            <div class="media-left">
+                                <span class="icon is-large">
+                                    <i class="fa fa-circle-o"></i>
+                                </span>
+                            </div>
+                            <div class="media-left">
+                                <span class="icon is-large">
+                                    <i class="fa fa-2x fa-desktop"></i>
+                                </span>
+                            </div>
+                            <div class="media-content">
+                                <strong>Safari</strong> on OS X 10.12.6
+                                <br>
+                                <code class="has-text-grey-light">84.156.99.71</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+
+</html>

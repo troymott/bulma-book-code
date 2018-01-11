@@ -1,0 +1,78 @@
+<nav class="breadcrumb">
+    <ul>
+        <li>
+            <a [routerLink]="['/books']">Books</a>
+        </li>
+        <li class="is-active">
+            <a>Edit book</a>
+        </li>
+    </ul>
+</nav>
+<form>
+    <div class="field">
+        <div class="field">
+            <label class="label">Title</label>
+            <div class="control">
+                <input class="input is-large" type="text" placeholder="e.g. Designing with Bulma" value="{{ book?.title }}" required="">
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-desktop">
+        <div class="column">
+            <label class="label">Price</label>
+            <div class="control has-icons-left">
+                <input class="input" type="number" placeholder="e.g. 22.99" value="{{ book?.price }}" required="">
+                <span class="icon is-small is-left">
+              <i class="fa fa-dollar"></i>
+            </span>
+            </div>
+        </div>
+
+        <div class="column">
+            <label class="label">Pages</label>
+            <div class="control">
+                <input class="input" type="number" placeholder="e.g. 270" value="{{ book?.pages }}" required="">
+            </div>
+        </div>
+
+        <div class="column">
+            <label class="label">ISBN</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="e.g. 9781939902351" value="{{ book?.ISBN }}" required="">
+            </div>
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Cover image</label>
+        <div class="control">
+            <img src="assets/images/{{book?.image}}">
+        </div>
+        <div class="control">
+            <div class="file has-name">
+                <label class="file-label">
+              <input class="file-input" type="file">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fa fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Choose a file…
+                </span>
+              </span>
+              <span class="file-name">
+                ../{{ book?.image }}
+              </span>
+            </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="buttons">
+            <a class="button is-medium is-success" (click)="save()">Save changes</a>
+            <a class="button is-medium is-light" [routerLink]="['/books']">Cancel</a>
+        </div>
+    </div>
+</form>

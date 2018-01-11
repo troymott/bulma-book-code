@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Books</title>
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma-0.6.1.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="images/logo.png">
+        </a>
+        <div class="navbar-burger burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <small>Publishing at the speed of technology</small>
+          </div>
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">
+              Alex Johnson
+            </div>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-user-circle-o"></i>
+                  </span>
+                  Profile
+                </div>
+              </a>
+              <a class="navbar-item open-modal-button" data-target="report-a-bug">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-bug"></i>
+                  </span>
+                  Report bug
+                </div>
+              </a>
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-sign-out"></i>
+                  </span>
+                  Sign Out
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+          <nav class="menu">
+            <p class="menu-label">
+              Menu
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a href="dashboard.html">
+                  <span class="icon">
+                    <i class="fa fa-tachometer"></i>
+                  </span>
+                  Dashboard
+                  </a>
+              </li>
+              <li>
+                <a class="is-active" href="books.html">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  Books
+                </a>
+              </li>
+              <li>
+                <a href="customers.html">
+                  <span class="icon">
+                    <i class="fa fa-address-book"></i>
+                  </span>
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a href="orders.html">
+                  <span class="icon">
+                    <i class="fa fa-file-text-o"></i>
+                  </span>
+                  Orders
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="column">
+          <h1 class="title ">Books</h1>
+
+          <nav class="level">
+            <div class="level-left">
+              <div class="level-item">
+                <p class="subtitle is-5">
+                  <strong>6</strong> books
+                </p>
+              </div>
+
+              <p class="level-item">
+                <a class="button is-success" href="new-book.html">New</a>
+              </p>
+              
+              <div class="level-item is-hidden-tablet-only">
+                <div class="field has-addons">
+                  <p class="control">
+                    <input class="input" type="text" placeholder="Book name, ISBN…">
+                  </p>
+                  <p class="control">
+                    <button class="button">
+                      Search
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="level-right">
+              <div class="level-item">
+                Order by
+              </div>
+              <div class="level-item">
+                <div class="select">
+                  <select>
+                    <option>Publish date</option>
+                    <option>Price</option>
+                    <option>Page count</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="columns is-multiline">
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+              <article class="box">
+                <div class="media">
+                  <aside class="media-left">
+                    <img src="images/tensorflow.jpg" width="80">
+                  </aside>
+                  <div class="media-content">
+                    <p class="title is-5 is-spaced is-marginless">
+                      <a href="edit-book.html">TensorFlow For Machine Intelligence</a>
+                    </p>
+                    <p class="subtitle is-marginless">
+                      $22.99
+                    </p>
+                    <div class="content is-small">
+                      270 pages
+                      <br>
+                      ISBN: 9781939902351
+                      <br>
+                      <a href="user.html">Edit</a>
+                      <span>·</span>
+                      <a class="delete-item">Delete</a>
+                    <p></p>
+                  </div>
+                </div>
+              </div></article>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+              <article class="box">
+                <div class="media">
+                  <aside class="media-left">
+                    <img src="images/docker.jpg" width="80">
+                  </aside>
+                  <div class="media-content">
+                    <p class="title is-5 is-marginless">
+                      <a href="edit-book.html">Docker in Production</a>
+                    </p>
+                    <p class="subtitle is-marginless">
+                      $22.99
+                    </p>
+                    <div class="content is-small">
+                      156 pages
+                      <br>
+                      ISBN: 9781939902184
+                      <br>
+                      <a href="user.html">Edit</a>
+                      <span>·</span>
+                      <a class="delete-item">Delete</a>
+                    <p></p>
+                  </div>
+                </div>
+              </div></article>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+              <article class="box">
+                <div class="media">
+                  <aside class="media-left">
+                    <img src="images/gulp.jpg" width="80">
+                  </aside>
+                  <div class="media-content">
+                    <p class="title is-5 is-marginless">
+                      <a href="edit-book.html">Developing a Gulp.js Edge</a>
+                    </p>
+                    <p class="subtitle is-marginless">
+                      $22.99
+                    </p>
+                    <div class="content is-small">
+                      134 pages
+                      <br>
+                      ISBN: 9781939902146
+                      <br>
+                      <a href="user.html">Edit</a>
+                      <span>·</span>
+                      <a class="delete-item">Delete</a>
+                    <p></p>
+                  </div>
+                </div>
+              </div></article>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+              <article class="box">
+                <div class="media">
+                  <aside class="media-left">
+                    <img src="images/swift.jpg" width="80">
+                  </aside>
+                  <div class="media-content">
+                    <p class="title is-5 is-marginless">
+                      <a href="edit-book.html">Learning Swift</a>
+                    </p>
+                    <p class="subtitle is-marginless">
+                      $22.99
+                    </p>
+                    <div class="content is-small">
+                      342 pages
+                      <br>
+                      ISBN: 9781939902115
+                      <br>
+                      <a href="user.html">Edit</a>
+                      <span>·</span>
+                      <a class="delete-item">Delete</a>
+                    <p></p>
+                  </div>
+                </div>
+              </div></article>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+              <article class="box">
+                <div class="media">
+                  <aside class="media-left">
+                    <img src="images/js-framework.jpg" width="80">
+                  </aside>
+                  <div class="media-content">
+                    <p class="title is-5 is-marginless">
+                      <a href="edit-book.html">Choosing a JavaScript Framework</a>
+                    </p>
+                    <p class="subtitle is-marginless">
+                      $19.99
+                    </p>
+                    <div class="content is-small">
+                      96 pages
+                      <br>
+                      ISBN: 9781939902092
+                      <br>
+                      <a href="user.html">Edit</a>
+                      <span>·</span>
+                      <a class="delete-item">Delete</a>
+                    <p></p>
+                  </div>
+                </div>
+              </div></article>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+              <article class="box">
+                <div class="media">
+                  <aside class="media-left">
+                    <img src="images/google-cardboard.jpg" width="80">
+                  </aside>
+                  <div class="media-content">
+                    <p class="title is-5 is-marginless">
+                      <a href="edit-book.html">Deconstructing Google Cardboard Apps</a>
+                    </p>
+                    <p class="subtitle is-marginless">
+                      $22.99
+                    </p>
+                    <div class="content is-small">
+                      178 pages
+                      <br>
+                      ISBN: 9781939902245
+                      <br>
+                      <a href="user.html">Edit</a>
+                      <span>·</span>
+                      <a class="delete-item">Delete</a>
+                    <p></p>
+                  </div>
+                </div>
+              </div></article>
+            </div>
+          </div>
+
+          <nav class="pagination">
+            <a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list">
+              <li>
+                <a class="pagination-link">1</a>
+              </li>
+              <li>
+                <span class="pagination-ellipsis">&hellip;</span>
+              </li>
+              <li>
+                <a class="pagination-link">45</a>
+              </li>
+              <li>
+                <a class="pagination-link is-current">46</a>
+              </li>
+              <li>
+                <a class="pagination-link">47</a>
+              </li>
+              <li>
+                <span class="pagination-ellipsis">&hellip;</span>
+              </li>
+              <li>
+                <a class="pagination-link">86</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- Modals -->
+    <div class="modal" id="report-a-bug">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Report a Bug</p>
+                <button class="delete close-modal-button" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="notification is-success is-hidden modal-success-notification">
+                <button class="delete close-notification"></button>
+                    <span class="fa fa-bug"></span> Thanks. Your bug has been reported.
+                </div>
+                <textarea class="textarea" placeholder="Let us know what problems you faced."></textarea>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success send-bug-report">Send</button>
+                <button class="button close-modal-button">Close</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    
+  </body>
+</html>

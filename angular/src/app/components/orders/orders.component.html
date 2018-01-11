@@ -1,0 +1,86 @@
+<h1 class="title ">Orders</h1>
+
+<nav class="level">
+    <div class="level-left">
+        <div class="level-item">
+            <p class="subtitle is-5">
+                <strong>2</strong> orders
+            </p>
+        </div>
+        <div class="level-item is-hidden-tablet-only">
+            <div class="field has-addons">
+                <p class="control">
+                    <input class="input" type="text" placeholder="Order #…" [(ngModel)]="userFilter.number">
+                </p>
+                <p class="control">
+                    <button class="button" (click)="userFilter.number = ''">
+                Clear
+              </button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="level-right">
+        <p class="level-item" (click)="userFilter.status = ''"><a><strong>All</strong></a></p>
+        <p class="level-item" (click)="userFilter.status = 'In progress'"><a>In progress</a></p>
+        <p class="level-item" (click)="userFilter.status = 'Successful'"><a>Successful</a></p>
+        <p class="level-item" (click)="userFilter.status = 'Failed'"><a>Failed</a></p>
+    </div>
+</nav>
+
+<table class="table is-hoverable is-fullwidth">
+    <thead>
+        <tr>
+            <th>Order #</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Books</th>
+            <th>Status</th>
+            <th class="has-text-right">Total</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Order #</th>
+            <th>Customer</th>
+            <th>Date</th>
+            <th>Books</th>
+            <th>Status</th>
+            <th class="has-text-right">Total</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr *ngFor="let order of orders | filterBy: userFilter | orderBy: order">
+            <td>
+                <a [routerLink]="['/orders-edit']" [queryParams]="{id: order.id }"><strong>{{ order.number }}</strong></a>
+            </td>
+            <td>
+                <a [routerLink]="['/customers']">{{ order.customer }}</a>
+            </td>
+            <td>{{ order.date }}</td>
+            <td>{{ order.books }}</td>
+            <td>
+                <span *ngIf="order.status === 'In progress'" class="tag is-warning">{{ order.status }}</span>
+                <span *ngIf="order.status === 'Successful'" class="tag is-success">{{ order.status }}</span>
+            </td>
+            <td class="has-text-right">${{ order.total }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<nav class="pagination">
+    <a class="pagination-previous">Previous</a>
+    <a class="pagination-next">Next page</a>
+    <ul class="pagination-list">
+        <li>
+            <a class="pagination-link">1</a>
+        </li>
+        <li>
+            <span class="pagination-ellipsis">…</span>
+        </li>
+        <li>
+            <a class="pagination-link">1</a>
+        </li>
+    </ul>
+</nav>

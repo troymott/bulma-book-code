@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bulma-0.6.1.css">
+    <style>
+        .is-rounded img {
+            border-radius: 300000px;
+        }
+
+        .hero {
+            background-color: rgba(10, 10, 10, .86);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+
+                <div class="columns">
+                    <div class="column is-4 is-offset-4">
+                        <form class="box" action="">
+                            <div class="field has-addons is-grouped is-grouped-centered">
+                                <figure class="image is-128x128 is-rounded">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png">
+                                </figure>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input is-danger" type="email" placeholder="Email">
+                                    <span class="icon is-small is-left">
+                                <i class="fa fa-envelope"></i>
+                              </span>
+                                    <span class="icon is-small is-right">
+                                <i class="fa fa-warning"></i>
+                              </span>
+                                </div>
+                                <p class="help is-danger">This email is invalid</p>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Password</label>
+                                <p class="control has-icons-left">
+                                    <input class="input is-danger" type="password" placeholder="Password">
+                                    <span class="icon is-small is-left">
+                                <i class="fa fa-lock"></i>
+                              </span>
+                                </p>
+                                <p class="help is-danger">This password is invalid</p>
+                            </div>
+
+                            <div class="field">
+                                <p class="control">
+                                    <button class="button is-success">
+                                Login
+                              </button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

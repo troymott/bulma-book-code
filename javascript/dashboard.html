@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma-0.6.1.css">
+  </head>
+  <body>
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="images/logo.png">
+        </a>
+        <div class="navbar-burger burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <small>Publishing at the speed of technology</small>
+          </div>
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-link">
+              Alex Johnson
+            </div>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-user-circle-o"></i>
+                  </span>
+                  Profile
+                </div>
+              </a>
+              <a class="navbar-item open-modal-button" data-target="report-a-bug">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-bug"></i>
+                  </span>
+                  Report bug
+                </div>
+              </a>
+              <a class="navbar-item">
+                <div>
+                  <span class="icon is-small">
+                    <i class="fa fa-sign-out"></i>
+                  </span>
+                  Sign Out
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns">
+        <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+          <nav class="menu">
+            <p class="menu-label">
+              Menu
+            </p>
+            <ul class="menu-list">
+              <li>
+                <a class="is-active" href="dashboard.html">
+                  <span class="icon">
+                    <i class="fa fa-tachometer"></i>
+                  </span>
+                  Dashboard
+                  </a>
+              </li>
+              <li>
+                <a href="books.html">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  Books
+                </a>
+              </li>
+              <li>
+                <a href="customers.html">
+                  <span class="icon">
+                    <i class="fa fa-address-book"></i>
+                  </span>
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a href="orders.html">
+                  <span class="icon">
+                    <i class="fa fa-file-text-o"></i>
+                  </span>
+                  Orders
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="column">
+          <div class="level">
+            <div class="level-left">
+              <h1 class="subtitle is-3">
+                <span class="has-text-grey-light">Hello</span> <strong>Alex Johnson</strong>
+              </h1>
+            </div>
+            <div class="level-right">
+              <div class="select">
+                <select>
+                  <option>Today</option>
+                  <option>Yesterday</option>
+                  <option>This Week</option>
+                  <option selected>This Month</option>
+                  <option>This Year</option>
+                  <option>All time</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-multiline">
+            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+              <div class="notification is-link has-text">
+                <p class="title is-1">232</p>
+                <p class="subtitle is-4">Orders</p>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+              <div class="notification is-info has-text">
+                <p class="title is-1">$7,648</p>
+                <p class="subtitle is-4">Revenue</p>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+              <div class="notification is-primary has-text">
+                <p class="title is-1">1,678</p>
+                <p class="subtitle is-4">Visitors</p>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+              <div class="notification is-success has-text">
+                <p class="title is-1">20,756</p>
+                <p class="subtitle is-4">Pageviews</p>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="title is-4">
+                    Latest orders
+                  </h2>
+                  
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">787352</a>
+                        </p>
+                        <small>
+                          Nov 18, 17:38 by <a href="edit-customer.html">John Miller</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <p class="title is-5 is-marginless">
+                          $56.98
+                        </p>
+                        <span class="tag is-warning">In progress</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">289050</a>
+                        </p>
+                        <small>
+                          Nov 16, 11:45 by <a href="edit-customer.html">Samantha Rogers</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <p class="title is-5 is-marginless">
+                          $22.99
+                        </p>
+                        <span class="tag is-success">Successful</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="level">
+                    <div class="level-left">
+                      <div>
+                        <p class="title is-5 is-marginless">
+                          <a href="edit-order.html">918478</a>
+                        </p>
+                        <small>
+                          Nov 12, 21:57 by <a href="edit-customer.html">Simon Jefferson</a>
+                        </small>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="has-text-right">
+                        <p class="title is-5 is-marginless">
+                          $22.99
+                        </p>
+                        <span class="tag is-danger">Failed</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a class="button is-link is-outlined" href="orders.html">View all orders</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="title is-4">
+                    Most popular books
+                  </h2>
+              
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">1</p>
+                    </div>
+                    <div class="media-left">
+                      <img src="images/swift.jpg" width="40">
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-book.html">Learning Swift</a>
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      146 sold
+                    </div>
+                  </div>
+              
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">2</p>
+                    </div>
+                    <div class="media-left">
+                      <img src="images/tensorflow.jpg" width="40">
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-book.html">TensorFlow For Machine Intelligence</a>
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      56 sold
+                    </div>
+                  </div>
+              
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">3</p>
+                    </div>
+                    <div class="media-left">
+                      <img src="images/js-framework.jpg" width="40">
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-book.html">Choosing a JavaScript Framework</a>
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      47 sold
+                    </div>
+                  </div>
+
+                  <a class="button is-link is-outlined" href="books.html">View all books</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop is-4-fullhd">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="title is-4">
+                    Most loyal customers
+                  </h2>
+              
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">1</p>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-customer.html">John Miller</a>
+                      </p>
+                      <p class="subtitle is-6">
+                        United States
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      7 orders
+                    </div>
+                  </div>
+              
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">2</p>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-customer.html">Samantha Rogers</a>
+                      </p>
+                      <p class="subtitle is-6">
+                        United Kingdom
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      5 orders
+                    </div>
+                  </div>
+              
+                  <div class="media">
+                    <div class="media-left is-marginless">
+                      <p class="number">3</p>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-5 is-spaced is-marginless">
+                        <a href="edit-customer.html">Paul Jacques</a>
+                      </p>
+                      <p class="subtitle is-6">
+                        Canada
+                      </p>
+                    </div>
+                    <div class="media-right">
+                      2 orders
+                    </div>
+                  </div>
+
+                  <a class="button is-link is-outlined" href="customers.html">View all customers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+       <!-- Modals -->
+    <div class="modal" id="report-a-bug">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Report a Bug</p>
+                <button class="delete close-modal-button" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="notification is-success is-hidden modal-success-notification">
+                <button class="delete close-notification"></button>
+                    <span class="fa fa-bug"></span> Thanks. Your bug has been reported.
+                </div>
+                <textarea class="textarea" placeholder="Let us know what problems you faced."></textarea>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success send-bug-report">Send</button>
+                <button class="button close-modal-button">Close</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
