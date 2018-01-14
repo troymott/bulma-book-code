@@ -1,37 +1,58 @@
 [
   {
     "name": 1,
-    "label": "List item 1",
-    "cover": "alexa-edge.jpg"
+    "cover": "alexa-edge.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   },
   {
     "name": 2,
-    "label": "List item 2",
-    "cover": "chatbots.jpg"
+    "cover": "chatbots.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   },
   {
     "name": 3,
-    "label": "List item 3",
-    "cover": "electron-edge.jpg"
+    "cover": "electron-edge.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   },
   {
     "name": 4,
-    "label": "List item 4",
-    "cover": "redux-edge.jpg"
+    "cover": "redux-edge.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   },
   {
     "name": 5,
-    "label": "List item 5",
-    "cover": "react-edge.jpg"
+    "cover": "react-edge.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   },
   {
     "name": 6,
-    "label": "List item 6",
-    "cover": "tensorflow-edge.jpg"
+    "cover": "tensorflow-edge.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   },
   {
     "name": 7,
-    "label": "List item 7",
-    "cover": "gulp-edge.jpg"
+    "cover": "gulp-edge.jpg",
+    "author": "Dave Berning",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis.
+
+Donec tincidunt tincidunt auctor. Donec pharetra suscipit ligula. Sed auctor, purus ut posuere suscipit, elit neque blandit ipsum, ac commodo odio ligula a nulla. Morbi bibendum non justo nec pellentesque. Nunc augue justo, vulputate nec risus nec, suscipit tincidunt ante. Cras interdum mi ut metus molestie, eu elementum nibh tincidunt. Nullam sem magna, pretium vel rutrum at, faucibus molestie enim. Pellentesque vehicula, augue a gravida vehicula, sapien ante sodales mi, bibendum tristique eros enim eget ex. Nunc aliquam lectus ultrices, semper nunc ut, dignissim nisi. Ut pulvinar viverra ex, vitae faucibus est commodo in. Nulla facilisi. In aliquet, nibh eu ullamcorper egestas, ipsum risus consequat neque, nec porttitor tortor lorem eget lorem."
   }
 ]
