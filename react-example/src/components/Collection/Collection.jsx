@@ -32,14 +32,11 @@ class Collection extends Component {
       <div>
         <Header />
         <h1>Your Collection</h1>
-        <CollectionSingleBook />
-        <ul>
-          {this.state.items.map((item) => (
-              <li key={item.id}>
-                  {item.label}
-              </li>
-          ))}
-        </ul>
+        {this.state.items.map((item) => (
+          <div>
+            <CollectionSingleBook name={item.label} />
+          </div>
+        ))}
       </div>
     );
   }
