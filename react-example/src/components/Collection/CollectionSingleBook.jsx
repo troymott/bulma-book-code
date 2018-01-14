@@ -4,7 +4,7 @@ class CollectionSingleBook extends Component {
   render() {
     return (
       <div>
-        <p>{this.props.name}</p>
+        <p>{this.props.book.label}</p>
       </div>
     );
   }
