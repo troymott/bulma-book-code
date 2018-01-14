@@ -1,18 +1,37 @@
 [
   {
     "name": 1,
-    "label": "List item 1"
+    "label": "List item 1",
+    "cover": "alexa-edge.jpg"
   },
   {
     "name": 2,
-    "label": "List item 2"
+    "label": "List item 2",
+    "cover": "chatbots.jpg"
   },
   {
     "name": 3,
-    "label": "List item 3"
+    "label": "List item 3",
+    "cover": "electron-edge.jpg"
   },
   {
     "name": 4,
-    "label": "List item 4"
+    "label": "List item 4",
+    "cover": "redux-edge.jpg"
+  },
+  {
+    "name": 5,
+    "label": "List item 5",
+    "cover": "react-edge.jpg"
+  },
+  {
+    "name": 6,
+    "label": "List item 6",
+    "cover": "tensorflow-edge.jpg"
+  },
+  {
+    "name": 7,
+    "label": "List item 7",
+    "cover": "gulp-edge.jpg"
   }
 ]

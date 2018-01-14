@@ -12,6 +12,7 @@ class App extends Component {
         <div>
           <Route exact path="/" component={Login} />
           <Route exact path="/collection" component={Collection} />
+          <Route name="collectionDetail" path="/collection/:id" component={Collection} />
         </div>
       </BrowserRouter>
     );

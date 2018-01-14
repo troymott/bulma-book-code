@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from './../../assets/logo-bis.png';
+import Logo from './../../assets/logo.png';
 
 class HeaderBrand extends Component {
   render() {
