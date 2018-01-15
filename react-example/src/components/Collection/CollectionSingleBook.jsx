@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter} from 'react-router-dom';
 
 class CollectionSingleBook extends Component {
   render() {
     return (
       <div>
-        <img src={require("./../../assets/" + this.props.book.cover)}/>
+        <Link to={{pathname: `/collection/${this.props.book.id}`, state: { singleBook: this.props.book }}}><img src={require("./../../assets/" + this.props.book.cover)}/></Link>
       </div>
     );
   }

@@ -1,44 +1,51 @@
 [
   {
-    "name": 1,
+    "id": 1,
+    "name": "Building Voice-Enabled Apps With Alexa",
     "cover": "alexa-edge.jpg",
-    "author": "Dave Berning",
+    "author": "Kory Becker",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   },
   {
-    "name": 2,
+    "id": 2,
+    "name": "Chatbots for eCommerce: Learn How to Build a Virtual Shopping Assistant",
     "cover": "chatbots.jpg",
-    "author": "Dave Berning",
+    "author": "Amit Kothari, Rania Zyane, & Joshua Hoover",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   },
   {
-    "name": 3,
+    "id": 3,
+    "name": "Developing an Electron Edge",
     "cover": "electron-edge.jpg",
-    "author": "Dave Berning",
+    "author": "Adam Lynch and Max Gfeller",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   },
   {
-    "name": 4,
+    "id": 4,
+    "name": "Developing a Redux Edge",
     "cover": "redux-edge.jpg",
-    "author": "Dave Berning",
-    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
+    "author": "Johannes Lumpe, Karl Purkhardt, Art Muller, Dario Carvero, and Ezekiel Chentnik",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   },
   {
-    "name": 5,
+    "id": 5,
+    "name": "Developing a React.js Edge",
     "cover": "react-edge.jpg",
-    "author": "Dave Berning",
+    "author": "Richard Feldman, Frankie Bagnardi, & Simon Hojberg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   },
   {
-    "name": 6,
+    "id": 6,
+    "name": "Tensorflow for Machine Intelligence",
     "cover": "tensorflow-edge.jpg",
-    "author": "Dave Berning",
+    "author": "Sam Abrahams, Danijar Hafner, Erik Erwitt, Ariel Scarpinelli",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   },
   {
-    "name": 7,
+    "id": 7,
+    "name": "Developing a Gulp Edge",
     "cover": "gulp-edge.jpg",
-    "author": "Dave Berning",
+    "author": "Tomasz Stryjewski and Jed Mao",
     "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et aliquet mauris. Nam sed molestie quam. Ut mauris mi, rutrum ac arcu non, porttitor vulputate ante. Phasellus eleifend, quam a eleifend auctor, purus nisl imperdiet tellus, at pharetra augue eros eu mauris. Nunc justo risus, aliquet in ultricies quis, pellentesque a magna. Phasellus scelerisque maximus blandit. Nulla sed nisi vitae turpis dapibus tempor vitae et ipsum. Nullam tincidunt, purus ac tincidunt mollis, libero mi euismod odio, vitae mattis lacus ligula et lorem. Phasellus sagittis neque vel sem euismod, sit amet laoreet lorem suscipit. In hac habitasse platea dictumst. Aliquam a libero ut ligula fermentum venenatis."
   }
 ]
