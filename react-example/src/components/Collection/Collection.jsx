@@ -17,7 +17,7 @@ class Collection extends Component {
     return (
       <div>
         <Header />
-        <div className="container has-gutter-top">
+        <div className="container has-gutter-top-bottom">
           <h1 className="title is-2">Your Collection</h1>
           {/* Iterates through data (books) */}
           <div className="columns is-multiline">
