@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Login from './components/Login/Login';
-import Collection from './components/Collection/Collection';
-import CollectionSingleBookDetail from './components/Collection/CollectionSingleBookDetail';
-import logo from './assets/logo.svg';
+import Login from './Login/Login';
+import Collection from './Collection/Collection';
+import CollectionSingleBookDetail from './Collection/CollectionSingleBookDetail';
+import logo from './../assets/logo.svg';
 import './App.css';
 
 class App extends Component {
