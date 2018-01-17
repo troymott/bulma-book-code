@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Header from './../Header/Header';
+import Footer from './../Footer/Footer';
 import styles from './styles/Collection.css';
 
 class CollectionSingleBookDetail extends Component {
   render() {
     const singleBook = this.props.location.state.singleBook;
-    
+
     return (
       <div>
         <Header />
-        <div className="container has-gutter-top">
+        <div className="container has-gutter-top-bottom">
           <div className="columns">
             <div className="column">
               <h1 className="title is-2">{singleBook.name}</h1>
@@ -34,6 +35,7 @@ class CollectionSingleBookDetail extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

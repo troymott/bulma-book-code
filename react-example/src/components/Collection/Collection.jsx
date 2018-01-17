@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './../Header/Header'
+import Footer from './../Footer/Footer';
 import CollectionSingleBook from './CollectionSingleBook';
 import BookData from './../../data/books.json';
 import styles from './styles/Collection.css';
@@ -27,6 +28,7 @@ class Collection extends Component {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
