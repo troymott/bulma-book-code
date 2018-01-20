@@ -9,24 +9,35 @@ $large-shadow: 0 10px 20px rgba(#000, 0.05);
 
 // Initial variables
 
-$turquoise: #4DDB0F;
+$turquoise: #71da44;
 $red: #D30012;
 $yellow: #FFF200;
 $green: #24D17D;
-$blue: #323BDB;
+$blue: #525adc;
 
 $family-sans-serif: "Karla", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
 
 $radius: 5px;
 
+// Derived
+
+$turquoise-invert: $white;
+
 // Components
 
 $body-background-color: $white-ter;
 
+$box-padding: 2rem;
 $box-shadow: $large-shadow;
+
 $card-shadow: $large-shadow;
 
 $column-gap: 1rem;
+
+$button-focus-box-shadow-color: rgba($black, 0.1);
+
+$input-arrow: $red;
+$input-focus-box-shadow-color: rgba($black, 0.1);
 
 $menu-item-color: $grey;
 $menu-item-hover-background-color: transparent;
@@ -37,6 +48,7 @@ $menu-item-radius: $radius;
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 2rem;
 
+$table-cell-border: 2px solid $white-ter;
 $table-cell-padding: 0.75em 1.5em;
 
 @import "node_modules/bulma/bulma";
@@ -46,13 +58,66 @@ $table-cell-padding: 0.75em 1.5em;
   font-weight: 500;
 }
 
+$control-size: 3em;
+
+.button,
+.input,
+.select select,
+.pagination-previous,
+.pagination-next,
+.pagination-link {
+  border-width: 0;
+  box-shadow: none;
+  height: $control-size;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .button {
+  &.is-outlined {
+    border-width: 2px;
+  }
+}
+
+.control.has-icons-left {
+  .input,
+  .select select {
+    padding-left: $control-size;
+  }
+
+  .icon {
+    height: $control-size;
+    width: $control-size;
+  }
+}
+
+.select {
+  &:not(.is-multiple) {
+    height: $control-size;
+  }
+}
+
+.select select {
+  &:not([multiple]) {
+    padding-right: $control-size;
+  }
+}
+
+.file-cta,
+.file-name {
+  background-color: $white;
+  border-width: 0;
+}
+
+.breadcrumb {
   @extend %heading;
   text-transform: uppercase;
+}
 
-  // &.is-medium {
-  //   font-size: 1rem;
-  // }
+.button {
+  @extend %heading;
+  background-color: rgba(#000, 0.05);
+  text-transform: uppercase;
 }
 
 .media-content {
@@ -88,6 +153,12 @@ $table-cell-padding: 0.75em 1.5em;
   }
 }
 
+.navbar {
+  &.has-shadow {
+    box-shadow: $large-shadow;
+  }
+}
+
 .navbar-item,
 .navbar-link {
   padding: 0.75rem 1.5rem;
@@ -99,6 +170,28 @@ $table-cell-padding: 0.75em 1.5em;
 
 .navbar-item {
   font-size: $size-5;
+}
+
+@include desktop() {
+  .navbar-dropdown .navbar-item {
+    padding: 0.75rem 1.5rem;
+
+    .icon {
+      margin-right: 1em;
+    }
+  }
+}
+
+.pagination {
+  @extend %heading;
+}
+
+.pagination-previous,
+.pagination-next,
+.pagination-link {
+  background-color: $white;
+  border-width: 0;
+  min-width: $control-size;
 }
 
 .table {
