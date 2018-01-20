@@ -45,8 +45,10 @@ $menu-item-active-background-color: $white;
 $menu-item-active-color: $black;
 $menu-item-radius: $radius;
 
-$navbar-height: 5rem;
-$navbar-item-img-max-height: 2rem;
+$navbar-height: 6rem;
+$navbar-item-img-max-height: 3rem;
+$navbar-item-hover-background-color: transparent;
+$navbar-dropdown-border-top: none;
 
 $table-cell-border: 2px solid $white-ter;
 $table-cell-padding: 0.75em 1.5em;
@@ -170,6 +172,13 @@ $control-size: 3em;
 
 .navbar-item {
   font-size: $size-5;
+}
+
+.navbar-start {
+  .navbar-item {
+    line-height: 1;
+    padding-left: 0;
+  }
 }
 
 @include desktop() {
