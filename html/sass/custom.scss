@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,500,700');
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+
+// New variables
+
+$family-heading: "Rubik", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
+$large-shadow: 0 10px 20px rgba(#000, 0.05);
+
+// Initial variables
+
+$turquoise: #4DDB0F;
+$red: #D30012;
+$yellow: #FFF200;
+$green: #24D17D;
+$blue: #323BDB;
+
+$family-sans-serif: "Karla", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
+
+$radius: 5px;
+
+// Components
+
+$body-background-color: $white-ter;
+
+$box-shadow: $large-shadow;
+$card-shadow: $large-shadow;
+
+$column-gap: 1rem;
+
+$menu-item-color: $grey;
+$menu-item-hover-background-color: transparent;
+$menu-item-active-background-color: $white;
+$menu-item-active-color: $black;
+$menu-item-radius: $radius;
+
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 2rem;
+
+$table-cell-padding: 0.75em 1.5em;
+
+@import "node_modules/bulma/bulma";
+
+%heading {
+  font-family: $family-heading;
+  font-weight: 500;
+}
+
+.button {
+  @extend %heading;
+  text-transform: uppercase;
+
+  // &.is-medium {
+  //   font-size: 1rem;
+  // }
+}
+
+.media-content {
+  overflow: initial;
+}
+
+.menu {
+  @extend %heading;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.menu-label {
+  display: none;
+}
+
+.menu-list {
+  a {
+    padding: 0.75em 1em;
+
+    .icon {
+      color: $grey-light;
+      margin-right: 0.5em;
+    }
+
+    &.is-active {
+      box-shadow: $large-shadow;
+
+      .icon {
+        color: $red;
+      }
+    }
+  }
+}
+
+.navbar-item,
+.navbar-link {
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-link {
+  padding-right: 2.5em;
+}
+
+.navbar-item {
+  font-size: $size-5;
+}
+
+.table {
+  box-shadow: $large-shadow;
+  font-size: 1.125rem;
+}
+
+.title {
+  @extend %heading;
+}
+
+h1.title {
+  font-weight: 700;
+  text-transform: uppercase;
+}

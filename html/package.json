@@ -1,0 +1,26 @@
+{
+  "name": "bleeding-edge-admin",
+  "version": "1.0.0",
+  "description": "Customization styles for the Bleeding Edge Admin",
+  "main": "sass/custom.scss",
+  "dependencies": {
+    "bulma": "^0.6.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "build": "npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/custom.css css/custom.css",
+    "build-sass": "node-sass --output-style expanded --include-path=node_modules/bulma sass/custom.scss css/custom.css",
+    "start": "npm run build-sass -- --watch"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "bulma"
+  ],
+  "author": "Jeremy Thomas <bbxdesign@gmail.com> (https://jgthms.com)",
+  "license": "ISC"
+}
