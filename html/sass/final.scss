@@ -4,8 +4,8 @@
 $family-heading: "Rubik", BlinkMacSystemFont, -apple-system, "Helvetica", "Arial", sans-serif;
 $large-shadow: 0 10px 20px rgba(#000, 0.05);
 
-// Initial variables
-$turquoise: #5dd52a;
+// // Initial variables
+$turquoise: #63d432;
 $red: #D30012;
 $yellow: #FFF200;
 $green: #24D17D;
@@ -17,6 +17,8 @@ $radius: 5px;
 
 // Import the rest of Bulma's initial variables
 @import "node_modules/bulma/sass/utilities/initial-variables";
+
+// Components
 
 $body-background-color: $white-ter;
 
@@ -46,9 +48,8 @@ $navbar-dropdown-border-top: none;
 $table-cell-border: 2px solid $white-ter;
 $table-cell-padding: 0.75em 1.5em;
 
+// Import the rest of Bulma
 @import "node_modules/bulma/bulma";
-
-// @debug colorLuminance($turquoise);
 
 %heading {
   font-family: $family-heading;
@@ -106,6 +107,8 @@ $control-size: 2.75em;
   border-width: 0;
 }
 
+////////
+
 .button {
   @extend %heading;
   background-color: rgba(#000, 0.05);
@@ -131,6 +134,7 @@ $control-size: 2.75em;
 
 .menu {
   @extend %heading;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -197,15 +201,9 @@ h1.title {
   text-transform: uppercase;
 }
 
-@include mobile() {
-  .media {
-    flex-direction: column;
-  }
-
-  .media-left {
-    margin: 0 0 0.5rem;
-  }
-}
+// .media-content {
+//   overflow: initial;
+// }
 
 @include desktop() {
   .navbar-dropdown .navbar-item {
@@ -214,5 +212,15 @@ h1.title {
     .icon {
       margin-right: 1em;
     }
+  }
+}
+
+@include mobile() {
+  .media {
+    flex-direction: column;
+  }
+
+  .media-left {
+    margin: 0 0 0.5rem;
   }
 }
