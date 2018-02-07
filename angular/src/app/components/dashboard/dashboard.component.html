@@ -98,7 +98,7 @@
                     <div class="media-left">
                         <img src="assets/images/{{book.image}}" width="40">
                     </div>
-                    <div class="media-content">
+                    <div class="media-content is-clipped">
                         <p class="title is-5 is-spaced is-marginless">
                             <a [routerLink]="['/books-edit']" [queryParams]="{id: book.id }">{{book.title}}</a>
                         </p>
@@ -124,7 +124,7 @@
                     <div class="media-left is-marginless">
                         <p class="number">{{i + 1}}</p>
                     </div>
-                    <div class="media-content">
+                    <div class="media-content is-clipped">
                         <p class="title is-5 is-spaced is-marginless">
                             <a [routerLink]="['/customers-edit']" [queryParams]="{id: customer.id }">{{ customer.name }}</a>
                         </p>
