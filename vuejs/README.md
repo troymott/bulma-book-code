@@ -1,4 +1,4 @@
-# vue-bulma-dahsboard
+# vue-bulma-dashboard
 
 > A dashboard example using Bulma CSS framework and VueJS.
 
