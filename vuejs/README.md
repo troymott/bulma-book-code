@@ -16,7 +16,7 @@ npm run build
 ```
 
 ## Project setup
-1. 
+1.
 ``` bash
 # install vue-router
 npm install vue-router
@@ -29,9 +29,9 @@ npm install vue-router
 	import Vue from "vue";
     import Router from "vue-router";
     import Dashboard from "../pages/Dashboard.vue";
-    
+
     Vue.use(Router);
-    
+
     export default new Router({
       routes: [
         {
@@ -43,7 +43,7 @@ npm install vue-router
     });
 	```
 5. Lastly, inside your main.js file. Import the new router file/folder inside and change the `new vue()` statement to read:
-	   ```vuejs
+	```vuejs
 	new Vue({
       el: "#app",
       router,
